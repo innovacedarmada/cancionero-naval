@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading"><img src="images/ethos-naval-logo.png" alt="" style="width:160px; height:64px;"></h1>
+    
+    <div class="centered-menu">
+        <ul>
+          <li class="active"><a href="ethosnaval.cl" active>INICIO</a></li>
+          <li class="collapse-toggle"></li>
+          <li><a href="https://ethosnaval.cl/historia/">HISTORIA</a></li>
+          <li><a href="https://ethosnaval.cl/tradiciones-navales/">TRADICIONES NAVALES</a></li>
+          <li><a href="https://ethosnaval.cl/valores-y-codigo-de-honor/">VALORES Y CÓDIGO DE HONOR</a></li>
+          <li><a href="https://ethosnaval.cl/buques/">UNIDADES NAVALES</a></li>
+          <li><a href="https://ethosnaval.cl/bandera-de-senales/">BANDERAS Y SEÑALES</a></li>
+        </ul>
+      </div>
+      <h1 class="heading2">Cancionero Naval</h1>
+    <div class="box-container">
+
+        <div class="box" data-src="canciones/himno01.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/song01.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>01 - HIMNO DE LA ARMADA CORO</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="canciones/himno02.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/song01.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>02 - HIMNO DE LA ESCUADRA CORO</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="canciones/himno03.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/song01.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>03 - HIMNO DE LA ESCUELA DE INGENIERÍA NAVAL BANDA</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="canciones/himno04.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/song01.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>04 - HIMNO DE LA ESPECIALIDAD DE FAROS CORO</h3>
+            </div>
+        </div>
+
+      
+    </div>
+
+</div>
+
+<div class="music-player">
+    <div id="return-page" class="fa fa-undo" onClick="history.go(-1); return false;"></div>
+    <div id="close-player" class="fas fa-angle-up"></div>
+    <h3 class="music-title">Seleccione su canción</h3>
+    <audio src="" controls></audio>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var collapseToggles = document.querySelectorAll('.collapse-toggle');
+
+      collapseToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+          var parentLi = this.parentElement;
+          parentLi.classList.toggle('collapsed');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
