@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading"><a href="https://ethosnaval.cl"><img src="images/ethos-naval-logo.png" alt="" style="width:160px; height:64px;"></a></h1>
+   
+    <div class="centered-menu">
+        <ul>
+          <li class="active"><a href="https://ethosnaval.cl" active>INICIO</a></li>
+          <li class="collapse-toggle"></li>
+          <li><a href="https://ethosnaval.cl/historia/">HISTORIA</a></li>
+          <li><a href="https://ethosnaval.cl/tradiciones-navales/">TRADICIONES NAVALES</a></li>
+          <li><a href="https://ethosnaval.cl/valores-y-codigo-de-honor/">VALORES Y CÓDIGO DE HONOR</a></li>
+          <li><a href="https://ethosnaval.cl/buques/">UNIDADES NAVALES</a></li>
+          <li><a href="https://ethosnaval.cl/bandera-de-senales/">BANDERAS Y SEÑALES</a></li>
+        </ul>
+      </div>
+      <h1 class="heading2">Cancionero Náutico</h1>
+    <div class="box-container-albumnes">
+
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="01-himnos-nacionales.html">
+                    <div class="play">
+                    <i class="fa fa-music"></i>
+                    </div>
+                    <img src="images/esgrum-banda.jpg" alt="">
+                </a>
+            </div>
+                
+            <div class="content">
+                <h3>01 - HIMNOS NACIONALES</h3>
+            </div>
+        </div>
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="02-himnos-institucionales.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/esnaval-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>02 - HIMNOS INSTITUCIONALES</h3>
+            </div>
+        </div>
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="03-himnos-de-escuelas.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/especialidadesl-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>03 - HIMNOS DE ESCUELAS</h3>
+            </div>
+        </div>
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="04-himnos-unidades.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/unidades-navales-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>04 - HIMNOS UNIDADES NAVALES</h3>
+            </div>
+        </div>
+        
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="05.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/im-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>05 - ESCUELA DE INFANTERÍA DE MARINA</h3>
+            </div>
+        </div>
+       
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="06.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/escuela-militar-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>06 - ESCUELA MILITAR</h3>
+            </div>
+        </div>
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="07.html">
+                    <div class="play">
+                        <i class="fa fa-music"></i>
+                    </div>
+                        <img src="images/carabineros-banda.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>07 - CARABINEROS DE CHILE</h3>
+            </div>
+        </div>
+        <div class="box" data-src="index.html">
+            <div class="image">
+                <a href="08.html">
+                <div class="play">
+                    <i class="fa fa-music"></i>
+                </div>
+                    <img src="images/song01.jpg" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <h3>08 - OTROS HIMNOS</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="music-player">
+    <div id="return-page" class="fa fa-undo" onClick="history.go(-1); return false;"></div>
+    <div id="close-player" class="fas fa-angle-up"></div>
+    <h3 class="music-title">Seleccione su canción</h3>
+    <audio src="" controls></audio>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var collapseToggles = document.querySelectorAll('.collapse-toggle');
+
+      collapseToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+          var parentLi = this.parentElement;
+          parentLi.classList.toggle('collapsed');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
