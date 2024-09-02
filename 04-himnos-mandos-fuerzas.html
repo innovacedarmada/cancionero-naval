@@ -7,6 +7,8 @@
     
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,19 +21,40 @@
     
 <div class="container">
 
-    <h1 class="heading"><img src="images/ethos-naval-logo.png" alt="" style="width:160px; height:64px;"></h1>
-    
-    <div class="centered-menu">
-        <ul>
-          <li class="active"><a href="https://ethosnaval.cl" active>INICIO</a></li>
-          <li class="collapse-toggle"></li>
-          <li><a href="https://ethosnaval.cl/historia/">HISTORIA</a></li>
-          <li><a href="https://ethosnaval.cl/tradiciones-navales/">TRADICIONES NAVALES</a></li>
-          <li><a href="https://ethosnaval.cl/valores-y-codigo-de-honor/">VALORES Y CÓDIGO DE HONOR</a></li>
-          <li><a href="https://ethosnaval.cl/buques/">UNIDADES NAVALES</a></li>
-          <li><a href="https://ethosnaval.cl/bandera-de-senales/">BANDERAS Y SEÑALES</a></li>
-        </ul>
-      </div>
+    <!-- <h1 class="heading"><img src="images/ethos-naval-logo.png" alt="" style="width:160px; height:64px;"></h1> -->
+
+        <!-- <div class="centered-menu">
+            <ul>
+                <li class="active"><a href="https://ethosnaval.cl" active>INICIO</a></li>
+                <li class="collapse-toggle"></li>
+                <li><a href="01-himnos-nacionales.html">HIMNOS NACIONALES</a></li>
+                <li><a href="02-himnos-institucionales.html">HIMNOS INSTITUCIONALES</a></li>
+                <li><a href="03-himnos-escuelas.html">HIMNOS DE ESCUELAS</a></li>
+                <li><a href="04-himnos-mandos-fuerzas.html">HIMNOS DE MANDOS Y FUERZAS</a></li>
+                <li><a href="05-unidades-reparticiones.html">HIMNOS DE UNIDADES Y REPARTICIONES</a></li>
+                <li><a href="06-himnos-especialidades.html">HIMNOS DE ESPECIALIDADES</a></li>
+                <li><a href="07-marchas-canciones.html">MARCHAS - CANCIONES</a></li>
+                <li><a href="08-cantos-populares-tradicionales">CANTOS POPULARES MARINEROS Y TRADICIONALES</a></li>
+
+              
+            </ul>
+        </div> -->
+        <div class="topnav">
+            <a href="https://ethosnaval.cl" class="active"><img src="images/ethos-naval-logo.png" alt="" style="width:160px; height:64px;"></a>
+            <div id="myLinks">
+                <a href="01-himnos-nacionales.html">HIMNOS NACIONALES</a>
+                <a href="02-himnos-institucionales.html">HIMNOS INSTITUCIONALES</a>
+                <a href="03-himnos-escuelas.html">HIMNOS DE ESCUELAS</a>
+                <a href="04-himnos-mandos-fuerzas.html">HIMNOS DE MANDOS Y FUERZAS</a>
+                <a href="05-unidades-reparticiones.html">HIMNOS DE UNIDADES Y REPARTICIONES</a>
+                <a href="06-himnos-especialidades.html">HIMNOS DE ESPECIALIDADES</a>
+                <a href="07-marchas-canciones.html">MARCHAS - CANCIONES</a>
+                <a href="08-cantos-populares-tradicionales.html">CANTOS POPULARES MARINEROS Y TRADICIONALES</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-lg"></i>
+            </a>
+        </div>
       <h1 class="heading2">04 - HIMNOS DE MANDOS Y FUERZAS</h1>
     <div class="box-container">
         <div class="box" data-src="canciones\04-SOUND-HIMNOS-MANDOS-FUERZA\escuadra.mp3">
@@ -132,6 +155,16 @@
       });
     });
   </script>
+   <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </body>
 </html>
